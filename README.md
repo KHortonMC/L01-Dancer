@@ -10,37 +10,36 @@ A dancer. A poet. A rebel. Let their motion be the decider.
 
 Objectives:
 
-- Part 1: Adding Animations
-- Add the Idle X or Idle Y character to your scene
-- Create and attach an Animation Controller
-- Open the Animation Controller and add the Idle animation
-- Set the Idle to default
-- Next, return to the animator and add a dance animation
-- Add a transition from the Idle to the dance animation
-- Run the game -- at the end of the Idle, the dance will begin!
+### Part 1: Adding Animations
+Skills Needed: Navigating Unity, Combining Objects
+[video link: navigating and making objects]
 
-- Part 2: Animation Switching
-- In order to change animations, we'll need a Trigger
-- (Triggers are events that happen once)
-- Add a trigger named 'dance' 
-- Set the animation to transition when the trigger runs
-- Test the transition by selecting the circle next to the trigger
+Add the `Idle X` or `Idle Y` character to your scene. Create and attach an Animator Controller.
 
-- Part 3: Animation Control From Script
-- Create a new Monobehavior Script 
-- Attach your script to your character
-- Open the script in Visual Studio Code
-- To connect our custom script to the animator:
-- Animator myAnimator = GetComponent<Animator>();
-- We can now set myAnimator.SetTrigger("dance");
-- In the Update method, check:
-- Input.GetKeyDown(KeyCode.Space) 
+Open the Animator and drag the idle animation you selected into the animator.
 
-- BOSS MODE (Optional): Create a Miaximo Account www.mixamo.com
-- Download a new dance animation to add to the scene
-- Use the keyboard to change between your animations!
-- Find a new character to replace the dancer
+### Part 2: Animation Switching
+Skills Needed: Triggers
+[video link: trigger and anim transitions]
 
-- REFLECTION: What would the character’s motion be like 
-  if they were not allowed to move freely — not allowed 
-  to dance? 
+Add a dance animation to the animator with a Trigger to switch between idle and dance.
+
+### Part 3: Animation Control from Script
+Skills Needed: References in C#, Code Control if (), Code Lookup, Composite Object Model
+
+Create a new Monobehavior Script and attach it to your character.
+<br>Either: 
+- Add a public variable to the Animator so you can attach it in the editor
+- GetComponent the Animator in the Start method and store a class-level reference to it
+
+In the Update method, add a control statement to check Input.GetKeyDown, and activate the Animator's previously attached trigger. 
+
+### BOSS MODE (Optional)
+Create a Miaximo Account www.mixamo.com
+
+Download new dance animations to add to the scene. Add more keyboard inputs to switch between animations.
+
+Download a new character model to replace the generic character.
+
+### Reflection
+What would the character’s motion be like if they were not allowed to move freely — not allowed to dance? 
