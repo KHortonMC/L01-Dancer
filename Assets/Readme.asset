@@ -15,12 +15,12 @@ MonoBehaviour:
   icon: {fileID: 2800000, guid: 727a75301c3d24613a3ebcec4a24c2c8, type: 3}
   title: L01-Dancer
   sections:
-  - heading: Welcome to CS155, C# and the Unity Platform
-    text: Why do we dance together? To heal, to remember, to say we speak a common language, we exist, and we are free.
+  - heading: Why Dance?
+    text: "Why do we dance together? To heal, to remember, to say we speak a common language, we exist, and we are free."
     linkText: Ted Talk Video Preview
     url: https://youtu.be/dpCBMwAweDI?si=1CvRF1ssOD21Zbi7
   - heading: Adding Animations
-    text: Add the `Idle X` or `Idle Y` character to your scene. Create and attach an Animator Controller. Open the Animator and drag the idle animation you selected into the animator.
+    text: From the Animation Folder, add the `Idle X` or `Idle Y` character to your scene. Create and attach an Animator Controller. Open the Animator and drag the idle animation you selected into the animator.
     linkText: Video Preview
     url: 
   - heading: Animation Switching
@@ -28,7 +28,7 @@ MonoBehaviour:
     linkText: Video Preview
     url: 
   - heading: Animation Control from Script
-    text: Create a new Monobehavior Script and attach it to your character. Add a public variable to the Animator so you can attach it in the editor -or- GetComponent the Animator in the Start method and store a class-level reference to it. In the Update method, add a control statement to check Input.GetKeyDown, and activate the Animator's previously attached trigger. 
+    text: Create a new Monobehavior Script and attach it to your character. GetComponent can find the linked Animator reference. In the Update method, add a control statement to check for keypress and activate the Animator's trigger. 
     linkText: Video Preview
     url: 
   - heading: BOSS MODE (Optional)
