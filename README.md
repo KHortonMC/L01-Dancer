@@ -1,6 +1,4 @@
 # L01-Dancer
-A hello Unity lab demonstrating a dancer character.
-
 “Why do we dance together? To heal, to remember, to say: we speak a common language, we exist, and we are free.”
 https://youtu.be/dpCBMwAweDI?si=1CvRF1ssOD21Zbi7
 
